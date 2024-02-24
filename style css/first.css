@@ -1,0 +1,40 @@
+nav {
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 50px;
+    
+}
+
+body {
+
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 10000;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.text-primary {
+    color: rgb(253, 110, 10)
+}
+
+.btn-primary {
+    background-color: rgb(253, 110, 10);
+    border: 0;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    /* padding: 20px 40px; */
+}
