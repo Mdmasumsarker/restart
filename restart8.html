@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            
+        }
+        .flex-box{
+            border: 2px solid red;
+            gap: 5px;
+            background-color: rgb(42, 165, 69);
+            padding: 20px;
+            border-radius: 20px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+        @media screen and (max-width: 560px) {
+            container{
+                /* grid-template-columns: repeat(1, 1fr); */
+                display: flex;
+                flex-direction: column;
+            }
+        
+        
+        }
+        @media screen and (min-width: 561px) and (max-width: 760px) {
+            container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexbox</h2>
+    <container>
+        <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi dolorum maiores dignissimos, ipsum adipisci ratione minus possimus deleniti necessitatibus 
+            delectus distinctio iure nisi minima fugit illo officia vel asperiores tempore?</div>
+        <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi dolorum maiores dignissimos, ipsum adipisci ratione minus possimus deleniti necessitatibus 
+            delectus distinctio iure nisi minima fugit illo officia vel asperiores tempore?</div>
+        <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi dolorum maiores dignissimos, ipsum adipisci ratione minus possimus deleniti necessitatibus 
+            delectus distinctio iure nisi minima fugit illo officia vel asperiores tempore?</div>
+        <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi dolorum maiores dignissimos, ipsum adipisci ratione minus possimus deleniti necessitatibus 
+            delectus distinctio iure nisi minima fugit illo officia vel asperiores tempore?</div>
+        <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi dolorum maiores dignissimos, ipsum adipisci ratione minus possimus deleniti necessitatibus 
+            delectus distinctio iure nisi minima fugit illo officia vel asperiores tempore?</div>
+        <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi dolorum maiores dignissimos, ipsum adipisci ratione minus possimus deleniti necessitatibus 
+            delectus distinctio iure nisi minima fugit illo officia vel asperiores tempore?</div>
+        <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi dolorum maiores dignissimos, ipsum adipisci ratione minus possimus deleniti necessitatibus 
+            delectus distinctio iure nisi minima fugit illo officia vel asperiores tempore?</div>
+        <div class="flex-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Commodi dolorum maiores dignissimos, ipsum adipisci ratione minus possimus deleniti necessitatibus 
+            delectus distinctio iure nisi minima fugit illo officia vel asperiores tempore?</div>
+    
+    </container>
+</body>
+</html>

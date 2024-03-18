@@ -1,0 +1,39 @@
+h2{
+    color: rgb(128, 0, 28);
+}
+img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.row{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    gap: 3px;
+    margin-bottom: 4px;
+}
+.row > div {
+    flex: 1;
+}
+.row-2 img{
+    height: 49%;
+}
+.square-collage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+@media screen and (max-width: 570px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .row-2 img{
+        height: auto;
+    }
+    .square-collage{
+        grid-template-columns: 1fr;
+    }
+}
